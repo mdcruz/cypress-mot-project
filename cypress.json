@@ -1,1 +1,6 @@
-{}
+{
+  "env": {
+    "REST_BOOKER_PLATFORM": "https://automationintesting.online",
+    "THE_INTERNET_APP": "https://the-internet.herokuapp.com"
+  }
+}

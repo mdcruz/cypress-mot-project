@@ -1,11 +1,11 @@
 {
   "validCredentials": {
-    "username": "tomsmith",
-    "password": "SuperSecretPassword!"
+    "username": "admin",
+    "password": "password"
   },
 
   "invalidCredentials": {
-    "username": "tomsmith",
-    "password": "SuperIncorrectPassword!"
+    "username": "admin",
+    "password": "admin!"
   }
 }

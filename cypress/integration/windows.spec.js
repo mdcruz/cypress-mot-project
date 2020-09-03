@@ -2,7 +2,7 @@
 
 describe('Windows', () => {
   it('should handle window alerts', () => {
-    cy.visit('https://the-internet.herokuapp.com/context_menu');
+    cy.visit(`${Cypress.env('THE_INTERNET_APP')}/context_menu`);
     cy.get('#hot-spot').rightclick();
 
     cy.on('window:alert', (text) => {
