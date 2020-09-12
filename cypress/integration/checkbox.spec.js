@@ -1,10 +1,12 @@
 /// <reference types="Cypress" />
 
 describe('Checkbox', () => {
-  it('should tick the first checkbox successfully', () => {
-    cy.visit(`${Cypress.env('THE_INTERNET_APP')}/checkboxes`);
-    cy.get('#checkboxes > :nth-child(1)').as('firstCheckbox');
+  beforeEach(() => {
+    cy.visit('https://the-internet.herokuapp.com/checkboxes');
+    cy.get('h3').invoke('text').as('headingText');
+  });
 
-    cy.get('@firstCheckbox').click().should('have.attr', 'checked');
+  it('should assert the heading text correctly', function () {
+    expect(this.headingText).to.equal('Checkboxes');
   });
 });
